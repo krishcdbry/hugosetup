@@ -1,12 +1,86 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>DNA Platform on DNA Platform</title>
-        <link>https://krishcdbry.github.io/hugosetup/</link>
-        <description>Recent content in DNA Platform on DNA Platform</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language>
-        <atom:link href="/" rel="self" type="application/rss+xml" />
-        
-    </channel>
+  <channel>
+    <title>DNA Platform</title>
+    <link>https://krishcdbry.github.io/hugosetup/</link>
+    <description>Recent content on DNA Platform</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://krishcdbry.github.io/hugosetup/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://krishcdbry.github.io/hugosetup/deploy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://krishcdbry.github.io/hugosetup/deploy/</guid>
+      <description>Deploying use the deploy.sh script</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://krishcdbry.github.io/hugosetup/hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://krishcdbry.github.io/hugosetup/hugo/</guid>
+      <description> Setup HUGO  Clone this repo
+$ git clone git@github3.cisco.com:dna-platform-ui/platform-ui.io.git  Download Hugo from http://gohugo.io or install using Homebrew:
+$ brew update &amp;amp;&amp;amp; brew install hugo  Run hugo in watch mode and start adding content under the content/ tree
+$ hugo server --watch  The site is server under localhost:1313
+  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://krishcdbry.github.io/hugosetup/link-checker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://krishcdbry.github.io/hugosetup/link-checker/</guid>
+      <description>Running link checker It is essential to ensure that hyperlinks within the site are properly setup and there are no broken links. Before committing, ensure that you run linkchecker.
+Install linkchecker  Requires python 2.7 environment.  (maglev2) ~/p/p/maglev.io ❯❯❯ pip install linkchecker Collecting linkchecker Collecting requests&amp;gt;=2.2.0 (from linkchecker) Using cached requests-2.13.0-py2.py3-none-any.whl Installing collected packages: requests, linkchecker Successfully installed linkchecker-9.3 requests-2.13.0   Start local website  ~/p/p/maglev.io ❯❯❯ hugo server --watch --port=40000 --bind=0.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://krishcdbry.github.io/hugosetup/menu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://krishcdbry.github.io/hugosetup/menu/</guid>
+      <description>Adding menuitems Top menu item  Go to the config.toml file Go to the # Top Menu Items comment Add a top menu item like this:  [[menu.main]] name = &amp;quot;Top menu name&amp;quot; url = &amp;quot;/top/menu/subpage/&amp;quot; identifier = &amp;quot;unique-identifier&amp;quot; weight = 10     Attribute Type Details     name string Name that will show up in the top menu.   url string Explicit url to wich the page should point to.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://krishcdbry.github.io/hugosetup/redirect/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://krishcdbry.github.io/hugosetup/redirect/</guid>
+      <description> Adding Redirects for old content This is done by adding the old URL (the one you want to redirect) as an alias to the new destination page.
+Example: date: 2016-09-13T09:00:00+00:00 title: Artifacts menu: main: parent: &amp;quot;Using Vamp&amp;quot; weight: 10 aliases: - /using-vamp/  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://krishcdbry.github.io/hugosetup/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://krishcdbry.github.io/hugosetup/search/</guid>
+      <description>Search Site search is implemented by generating JSON index files. Essentially buildSearchIndex.js creates pages.json and searchIndex.json files by going through the contents of the repo. In the live site, lunr.js is used to provide textual search based on the index files generated.
+To update the index, run buildSearchIndex.js. This is a nodejs script and has dependencies listed in package.json file.
+ NOTE: The below step is auto run in the documentation server.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://krishcdbry.github.io/hugosetup/versioning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://krishcdbry.github.io/hugosetup/versioning/</guid>
+      <description>Versioning  Go to the pages where you want subversioning on.  -api --test1.md --test2.md  Create subfolders for every version, and put copies of the files in them. Every version subfolder should start with the letter v and an integer (v1.0.0, v23.43.bla)
+-api --v1.0.0 ---test1.md ---test2.md --v2.0.0 ---test1.md ---test2.md  Add them to the sidemenu like you would do with a normal file. Don&amp;rsquo;t forget to give every page a unique id and different weight.</description>
+    </item>
+    
+  </channel>
 </rss>

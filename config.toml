@@ -2,7 +2,7 @@ baseurl = "https://krishcdbry.github.io/hugosetup/"
 languageCode = "en-us"
 title = "DNA Platform"
 publishDir = "docs"
-theme = "maglev-theme"
+theme = "blackburn"
 metadataformat = "yaml"
 canonifyurls = true
 
