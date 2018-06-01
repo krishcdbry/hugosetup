@@ -1,6 +1,7 @@
 baseurl = "/"
 languageCode = "en-us"
 title = "DNA Platform"
+publishDir = "docs"
 theme = "maglev-theme"
 metadataformat = "yaml"
 canonifyurls = true

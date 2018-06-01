@@ -1,0 +1,56 @@
+ 
+
+const datal2 = [{
+    "date": "03/29/2017 10:00",
+    "values": [2, 2, 1]
+}, {
+    "date": "03/29/2017 11:00",
+    "values": [1, 2, 2]
+}, {
+    "date": "03/29/2017 12:00",
+    "values": [3, 3, 3]
+}, {
+    "date": "03/29/2017 13:00",
+    "values": [4, 4, 4]
+}, {
+    "date": "03/29/2017 14:00",
+    "values": [2, 2, 2]
+}, {
+    "date": "03/29/2017 15:00",
+    "values": [4, 5, 5]
+}, {
+    "date": "03/29/2017 16:00",
+    "values": [5, 6, 6]
+}];
+
+const names2 = ["Label 1", "Label 2", "Label 3"]
+
+class AreaSample2 extends React.Component {
+    constructor(){
+        super();
+    }
+    render() {
+        //var newArray = (data3[this.state.currentSub].subs === undefined) ? [] : data3[this.state.currentSub].subs;
+        var data = JSON.stringify(datal2);
+        var names = names2;
+        var topValue = 4;
+        var bottomValue= 1;
+        var topname= 'Top Value Threshold'
+        var bottomname= 'Bottom Value Threshold'
+        var area = true;
+        var xtitle= 'Time';
+        var ytitle= 'Title for Y'
+        console.log(names);
+        var properties = { data, names, topValue, bottomValue, topname, bottomname, area,  xtitle, ytitle };
+        var timeline = DnxTimelineT(properties);
+        return (
+             React.createElement('div', null, 
+                timeline)
+        );
+    }
+}
+
+ReactDOM.render(
+  React.createElement(AreaSample2, null, null),
+  document.getElementById('react-app2')
+); 
