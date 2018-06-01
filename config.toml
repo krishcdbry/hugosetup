@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://krishcdbry.github.io/hugosetup/"
 languageCode = "en-us"
 title = "DNA Platform"
 publishDir = "docs"
