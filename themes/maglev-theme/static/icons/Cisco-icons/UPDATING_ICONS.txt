@@ -1,0 +1,38 @@
+When you replace the style.css, it will by default apply to the <i> class
+
+Near the top you will see the base style defined as:
+
+
+		i {
+		  /* use !important to prevent issues with browser extensions that change fonts */
+		  font-family: 'Cisco-icons' !important;
+		  speak: none;
+		  font-style: normal;
+		  font-weight: normal;
+		  font-variant: normal;
+		  text-transform: none;
+		  line-height: 1;
+
+		  /* Better Font Rendering =========== */
+		  -webkit-font-smoothing: antialiased;
+		  -moz-osx-font-smoothing: grayscale;
+		}
+
+
+This causes conflict issues with any other icon set that other plugins are using. This comes in automatically from icomoon, so manually make sure to scope it properly to the dna-* class by changing it to
+
+
+		[class^="dna-"], [class*="dna-"] {
+		  /* use !important to prevent issues with browser extensions that change fonts */
+		  font-family: 'Cisco-icons' !important;
+		  speak: none;
+		  font-style: normal;
+		  font-weight: normal;
+		  font-variant: normal;
+		  text-transform: none;
+		  line-height: 1;
+
+		  /* Better Font Rendering =========== */
+		  -webkit-font-smoothing: antialiased;
+		  -moz-osx-font-smoothing: grayscale;
+		}

@@ -1,0 +1,73 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "DNA Platform"
+theme = "maglev-theme"
+metadataformat = "yaml"
+canonifyurls = true
+
+
+## User Guide Menus
+
+[[menu.main]]
+	name	= "Hugo Site"
+	identifier = "hugo-site"
+	url = "/hugo/"
+	parent = "hugo"
+	weight = 1
+
+
+[[menu.main]]
+	name	= "Guides Site"
+	identifier = "hugo-guides"
+	url = "/guides/"
+	parent = "guides"
+	weight = 2	
+
+ 
+ ## User Guide Menus
+
+[[menu.main]]
+	name	= "Menu"
+	identifier = "menu"
+	url = "/menu"
+	parent = "hugo"
+	weight = 2
+
+ 
+[[menu.main]]
+	name	= "Versioning"
+	identifier = "versioning-model"
+	url = "/versioning"
+	parent = "hugo"
+	weight = 3
+
+
+[[menu.main]]
+	name	= "Redirects"
+	identifier = "old-Redirects"
+	url = "/redirect"
+	parent = "hugo"
+	weight = 5    
+
+
+[[menu.main]]
+	name	= "Search"
+	identifier = "search"
+	url = "/search"
+	parent = "hugo"
+	weight = 4    
+
+
+[[menu.main]]
+	name	= "Link Checker"
+	identifier = "link-checker"
+	url = "/link-checker"
+	parent = "hugo"
+	weight = 5        
+
+[[menu.main]]
+	name	= "Deploying"
+	identifier = "deploying"
+	url = "/deploy"
+	parent = "hugo"
+	weight = 6
