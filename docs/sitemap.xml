@@ -3,45 +3,45 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://krishcdbry.github.io/hugosetup/deploy/</loc>
+    <loc>/deploy/</loc>
   </url>
   
   <url>
-    <loc>https://krishcdbry.github.io/hugosetup/hugo/</loc>
+    <loc>/hugo/</loc>
   </url>
   
   <url>
-    <loc>https://krishcdbry.github.io/hugosetup/link-checker/</loc>
+    <loc>/link-checker/</loc>
   </url>
   
   <url>
-    <loc>https://krishcdbry.github.io/hugosetup/menu/</loc>
+    <loc>/menu/</loc>
   </url>
   
   <url>
-    <loc>https://krishcdbry.github.io/hugosetup/redirect/</loc>
+    <loc>/redirect/</loc>
   </url>
   
   <url>
-    <loc>https://krishcdbry.github.io/hugosetup/search/</loc>
+    <loc>/search/</loc>
   </url>
   
   <url>
-    <loc>https://krishcdbry.github.io/hugosetup/versioning/</loc>
+    <loc>/versioning/</loc>
   </url>
   
   <url>
-    <loc>https://krishcdbry.github.io/hugosetup/categories/</loc>
+    <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://krishcdbry.github.io/hugosetup/</loc>
+    <loc>/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://krishcdbry.github.io/hugosetup/tags/</loc>
+    <loc>/tags/</loc>
     <priority>0</priority>
   </url>
   
